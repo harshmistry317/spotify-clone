@@ -2,7 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("com.google.dagger.hilt.android")
-    kotlin("kapt") // Kotlin Annotation Processing Tool
+    kotlin("kapt")
+    alias(libs.plugins.google.gms.google.services) // Kotlin Annotation Processing Tool
 }
 
 android {
@@ -104,6 +105,15 @@ dependencies {
 
     // Timber logging library
     implementation("com.jakewharton.timber:timber:5.0.1")
+
+    //Exo player
+    implementation("androidx.media3:media3-exoplayer:1.6.0")
+    implementation("androidx.media3:media3-exoplayer-dash:1.6.0")
+    implementation("androidx.media3:media3-ui:1.6.0")
+
+    // Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:33.11.0"))
+    implementation("com.google.firebase:firebase-firestore")
 
 
 
