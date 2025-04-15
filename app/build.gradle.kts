@@ -115,6 +115,9 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.11.0"))
     implementation("com.google.firebase:firebase-firestore")
 
+    implementation("androidx.media:media:1.7.0")
+    implementation("androidx.media3:media3-session:1.6.0")
+    implementation("io.coil-kt:coil:2.6.0")
 
 
 
